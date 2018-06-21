@@ -28,6 +28,10 @@ def get_business_list():
         else:
             page += 1
 
+    # one-offs
+    with open("business.txt", "a") as business:
+        business.write("https://vignette.wikia.nocookie.net/bojackhorseman/images/f/f1/Vincent.png/revision/latest?cb=20150719055028\n")
+
 def get_business():
 
     with open("business.txt", "r") as business:
